@@ -5,6 +5,7 @@ class DockingStation
 
   def release_bike
     Bike.new
+    raise
   end
 
   def dock(bike)

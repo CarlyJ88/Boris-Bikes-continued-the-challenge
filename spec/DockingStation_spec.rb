@@ -21,4 +21,9 @@ describe DockingStation do
     expect { subject.release_bike }.to raise_error
   end
 
+  it 'return @bike when bike is docked' do
+    station = DockingStation.new
+    station.dock(Bike.new)
+    expect(station.release_bike).not_to be_nil
+  end
 end

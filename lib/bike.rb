@@ -5,7 +5,7 @@ class Bike
   end
 
   def working?
-    fail 'Cannot release broken bike' if report_broken
+    # fail 'Cannot release broken bike' if report_broken
     
     true
   end
